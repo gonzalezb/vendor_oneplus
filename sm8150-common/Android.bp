@@ -177,6 +177,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "SoundTuner",
+	owner: "oneplus",
+	apk: "proprietary/priv-app/SoundTuner/SoundTuner.apk",
+	certificate: "platform",
+	overrides: ["AudioFX"],
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "CneApp",
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
